@@ -1,5 +1,5 @@
 {
-  description = ''Mapping nim type to xml node, and parse from it.'';
+  description = ''Nim xml mapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-xmlio-v0_2_2.flake = false;
   inputs.src-xmlio-v0_2_2.owner = "codehz";
-  inputs.src-xmlio-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-xmlio-v0_2_2.ref   = "v0_2_2";
   inputs.src-xmlio-v0_2_2.repo  = "xmlio";
   inputs.src-xmlio-v0_2_2.type  = "github";
   
   inputs."vtable".owner = "nim-nix-pkgs";
   inputs."vtable".ref   = "master";
   inputs."vtable".repo  = "vtable";
+  inputs."vtable".dir   = "v0_3_3";
   inputs."vtable".type  = "github";
   inputs."vtable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
